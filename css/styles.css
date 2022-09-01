@@ -1,0 +1,448 @@
+/* Importation de la typographie depuis GoogleFont */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu&display=swap');
+
+/* Initialisation des pages HTML */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* Initialisation de toutes les class comunes */
+body {
+    background:center/100% #797d8a;
+    height: 100%;
+    width: 100%;
+    clear:both;
+    margin-bottom: 100px;
+}
+
+h1,h2,h3 {
+	font-family: "Ubuntu", sans-serif; 
+	font-size:25px;
+	color:white;
+}
+
+h4{
+    font-family: "Ubuntu", sans-serif;
+    font-size:18px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+h5{
+    font-family: "Ubuntu", sans-serif;
+    font-size:18px;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    color: black;
+    text-decoration: underline;
+}
+
+h1,h2,h3,h4,h5{
+    width:fit-content;
+}
+
+p,a,ul,li,label{
+    font-family: "Roboto", sans-serif;
+    font-size: 16px;	
+    color: #fff;
+}
+
+a{
+    color:black;
+    text-decoration: none;
+}
+a:hover{
+    background-color:#93d4f0;
+    padding:5px;    
+}
+
+i{
+    color:black;
+}
+
+label{
+    color:black;
+}
+
+header{
+    width: 100%;
+    background-color:#0E3955;  
+    color: white;
+    font-size: 2.5em;
+    border-bottom: 3px solid white;
+    display:inline-block;
+    box-shadow: 0px 2px 6px rgba(0,0,0,0.5);
+}
+
+.titreSite{
+    margin-top:25px;
+    margin-bottom: 25px;
+    margin-left:50px;
+    font-size:30px; 
+    float:left;
+}
+
+.menu_header{
+    float:right;
+}
+
+.menu{
+  display: flex;
+  list-style: none;
+}
+
+button{
+    color:#fff;
+}
+.btn{
+    padding: 10px 20px;
+    margin: 10px;
+    border: 3px solid #fff;
+    border-radius: 30px;
+    font-size: 16px;
+    box-shadow: 0px 1px 1px rgba(0,0,0,0.5);
+    margin:auto;
+}
+
+form{
+    margin-top: 15px;
+}
+
+.a_btn{
+    color:#fff;
+}
+.a_btn:hover{
+    background-color:#FF7A7A;
+    padding:10px 20px;   
+}
+
+.btn_nav{
+  background-color: #FF7A7A;
+  padding: 5px 15px;
+}
+    
+.btn_sort{
+  background-color: gray;
+  padding: 5px 15px;
+}
+
+.btn_recherche{
+  padding: 5px 15px;
+  background-color:#d3f2f3;
+}
+
+.btn_recherche:hover{
+    background-color:#93d4f0;
+    cursor:pointer;
+}
+
+.carre{
+    background-color:rgba(0,0,0,0.5) ;
+    padding:10px;
+    border-radius: 5px;
+    min-width: fit-content;
+}
+
+.carre_liste{
+    float:left;
+    margin-top: 30px;
+    margin-bottom: 100px;
+    margin-left:30px;
+}
+
+.carre_principal{
+    margin-top: 30px;
+    margin-left: 360px;
+    margin-right:100px;
+}
+
+.carre_connexion{
+    max-width: max-content;
+    margin:auto;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.titre{
+    padding: 10px;
+    font-size: 1.5em;
+}
+
+hr{
+    border-bottom: none;
+    border-top: dotted 5px #fff;
+    margin:5px;
+}
+
+.titreTexte{
+    background-color: white;
+    margin-top: 20px;
+    padding: 12px;
+}
+
+.titreArticle{
+    margin-bottom: 10px;
+    padding: 5px;
+    font-size: 1.3em;
+    background-color: #0E3955;
+    color: white;
+}
+
+.texte{
+    background-color: white;
+    font-family: "Roboto",sans-serif;
+    padding:5px;
+    margin-left:20px;
+    color: black;
+}
+
+input{
+    height:30px;
+    min-width: fit-content;
+    text-align: center;
+}
+
+.se_connecter{
+    margin: 50px;
+    text-align: center;
+}
+
+.lienmdp{
+    margin-top: 20px;
+}
+
+/* Initialisaiton du pied de page */
+footer{
+    background-color:#0E3955;  
+    color: white;
+    font-size: 2.5em;
+    outline: 3px solid white;
+    position:fixed;
+    bottom: 0;
+    width:100%;
+    clear:both;
+}
+
+.footerUn{
+    margin-left: 50px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    width: 250px;
+}
+
+.partieSuperieur{
+    padding:10px;
+}
+
+.tournesol{
+	font-size: 15px;
+}
+
+.partieInferieur{
+    padding: 10px;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+/*-----------                     Ajouté pour BVI                         ------------*/
+
+
+
+/* tableau */
+table,tr,td,th{
+    border-collapse: collapse;
+}
+table,th,td{
+    min-width: fit-content;
+    padding: 10px;
+    margin:auto;
+}
+td,th{
+    border: 1px solid black;
+}
+td{
+    text-align: center;
+    vertical-align: middle;
+}
+th{
+    vertical-align: middle;
+}
+
+
+
+
+#pageAccueil{
+    margin-left: 50px;
+}
+
+.sort{
+    height: min-content;
+}
+
+.recherche{
+    margin-left: 20px;
+}
+
+#nav{
+    border: 1px solid black;
+    width: fit-content;
+    margin-left: 20px;
+    margin-top: 20px;
+    padding: 5px;
+    
+}
+
+.ajout{
+    margin-left:20px;
+}
+
+p{
+    color:black;
+    text-align: center;
+}
+
+
+a.sort:hover{
+    padding:5px 15px;
+}
+
+a.suppr:hover{
+    padding:5px 15px;
+}
+
+button{
+    cursor:pointer;
+}
+
+button:hover{
+    background-color:#93d4f0;
+    padding:5px 15px; 
+}
+
+ul{
+    margin-bottom: 10px;
+}
+
+.infos{
+    border:0px;
+    min-width: -moz-available;
+}
+
+.factureclick:hover{
+   background-color:#93d4f0;
+   cursor:pointer;
+}
+
+.devisclick:hover{
+   background-color:#93d4f0;
+   cursor:pointer;
+}
+
+.deconnexion{
+    margin-top: 20px;
+    margin-right: 25px;
+    padding:10px 20px;
+}
+
+.deconnexion:hover{
+    padding:10px 20px;
+}
+
+.tabFacture{
+    margin:0;
+    margin-top:30px;
+    margin-left: 30px;
+}
+
+.tabDevis{
+    margin:0;
+    margin-top:30px;
+    margin-left: 30px;
+}
+
+select{
+    background-color: white;
+    border:0px;
+    min-width: 100%;
+}
+
+
+
+
+
+/* MESSAGES INFORMATIFS */
+
+.errMess{
+    margin:10px;
+    color: red;
+    font-size: 22px;
+}
+
+.validMess{
+    margin:10px;
+    color: blue;
+    font-size: 22px;
+}
+
+
+
+
+
+
+
+.sideBySideTable{
+    display:table;
+    height: fit-content;
+}
+.sideBySideTable::after{
+    content:"";
+    clear:both;
+}
+
+
+.containsATable{
+    vertical-align:baseline;
+    padding:0;
+}
+
+
+.infos_facture{
+    min-height: -moz-available;
+    min-width: -moz-available;
+}
+
+
+.tableLeft{
+    margin:0;
+    margin-top: 10px;
+    margin-left:25px;
+}
+
+
+.lesSelects{
+    min-width: -moz-available;
+}
