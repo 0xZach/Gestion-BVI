@@ -23,18 +23,6 @@ require_once "$racine/modele/func.inc.php";
 
 $fichier = AuthUsr_DAO::isLoggedOn('vue/vue_accueil');
 
-//var_dump(intervalDate("aujourd'hui"));
-//echo "<br>";
-//var_dump(intervalDate("hier"));
-//echo "<br>";
-//var_dump(intervalDate("mois courant"));
-//echo "<br>";
-//var_dump(intervalDate("mois dernier"));
-//echo "<br>";
-//var_dump(intervalDate("annee courante"));
-//echo "<br>";
-//var_dump(intervalDate("annee precedente"));
-
 //if(isset($_POST['importCSV'])){
 //    import_CSV();
 //}
